@@ -1,35 +1,29 @@
 # bas_web
 
-This template should help get you started developing with Vue 3 in Vite.
+- Tampilan awal pada menu Home
+![taskgolang1](https://github.com/ivialvam/bas_web/assets/97967090/8daaf13e-4010-4686-8f55-93fcf2b60b5f)
 
-## Recommended IDE Setup
+- Tampilan pada menu About
+![taskgolang about](https://github.com/ivialvam/bas_web/assets/97967090/46be512a-e808-44da-aaae-06cd15fc2ec1)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Tampilan pada menu login
+![taskgolang login](https://github.com/ivialvam/bas_web/assets/97967090/7be31c89-5ce2-4ab5-b3d0-8cbd429090a2)
 
-## Customize configuration
+  >> setelah login input username dan password, jika berhasil maka akan masuk ke halaman user yang akan menampilkan nama user dan profile managementnya
+![task golang after login](https://github.com/ivialvam/bas_web/assets/97967090/e1fdd809-8cd5-4fdb-94e2-f9f232f6635b)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Tampilan pada menu transaction
+![task golang transaction](https://github.com/ivialvam/bas_web/assets/97967090/38dfabcc-37ff-4de7-abc8-e1707474c6b6)
 
-## Project Setup
+ >> mengisi form pada transaction
+![task golang transaction value](https://github.com/ivialvam/bas_web/assets/97967090/78ff633c-a888-4578-acce-15f16d5ac342)
 
-```sh
-npm install
-```
+ >> memilih tujuan bank
+![bankid](https://github.com/ivialvam/bas_web/assets/97967090/59e6d2e4-fe6d-43fc-ad52-1c6607ae4ee5)
 
-### Compile and Hot-Reload for Development
+- Terakhir klik button "SEND"
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+#tampilan pada database
+![bankid db](https://github.com/ivialvam/bas_web/assets/97967090/5aed0db6-849f-4e1f-8a37-3ac68330e2a2)
+![task golang to database](https://github.com/ivialvam/bas_web/assets/97967090/aaf85fa8-ce70-4970-9552-26bc71941c15)
