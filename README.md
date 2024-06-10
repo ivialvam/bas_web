@@ -16,7 +16,7 @@
 ![task golang transaction](https://github.com/ivialvam/bas_web/assets/97967090/38dfabcc-37ff-4de7-abc8-e1707474c6b6)
 
  >> mengisi form pada transaction
-![task golang transaction value](https://github.com/ivialvam/bas_web/assets/97967090/78ff633c-a888-4578-acce-15f16d5ac342)
+![task golang transaction value](https://github.com/ivialvam/bas_web/assets/97967090/952af218-cea2-46b0-8bcd-e7aa37b26963)
 
  >> memilih tujuan bank
 ![bankid](https://github.com/ivialvam/bas_web/assets/97967090/59e6d2e4-fe6d-43fc-ad52-1c6607ae4ee5)
@@ -24,6 +24,7 @@
 - Terakhir klik button "SEND"
 
 
-#tampilan pada database
+
+# tampilan pada database
 ![bankid db](https://github.com/ivialvam/bas_web/assets/97967090/5aed0db6-849f-4e1f-8a37-3ac68330e2a2)
 ![task golang to database](https://github.com/ivialvam/bas_web/assets/97967090/aaf85fa8-ce70-4970-9552-26bc71941c15)
