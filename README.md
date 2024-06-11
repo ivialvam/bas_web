@@ -26,5 +26,6 @@
 
 
 # tampilan pada database
-![bankid db](https://github.com/ivialvam/bas_web/assets/97967090/5aed0db6-849f-4e1f-8a37-3ac68330e2a2)
-![task golang to database](https://github.com/ivialvam/bas_web/assets/97967090/aaf85fa8-ce70-4970-9552-26bc71941c15)
+![transaction input](https://github.com/ivialvam/bas_web/assets/97967090/e09cabf5-ac7c-43a5-a740-cbf3c094c87a)
+![transaction db](https://github.com/ivialvam/bas_web/assets/97967090/310cf7e5-9a79-4dbc-91fb-ad56f2941bbd)
+
