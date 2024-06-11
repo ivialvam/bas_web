@@ -9,7 +9,9 @@ const { transfer } = transactionStore;
 const data = reactive({
     Account_id: '',
     Bank_id: '',
-    Amount: 0
+    Amount: 0,
+    snackbar: false,
+    pesanLogin: ''
 })
 
 const myAxios = inject('myAxios')
@@ -29,7 +31,6 @@ const submit = () => {
         data.snackbar = true
     })
 }
-
 </script>
 
 
@@ -66,15 +67,14 @@ const submit = () => {
                     <v-btn @click="submit">SEND</v-btn>
                 </div>
             </form>
-
-            <!-- <v-snackbar v-model="data.snackbar">
-            {{ data.pesanLogin }} -->
-
-            <!-- <div v-if="submitted">
-                <h3>Data Transaksi</h3>
-                <p><strong>Account ID:</strong> {{ data.account_id }}</p>
-                <p><strong>Bank ID:</strong> {{ data.bank_id }}</p>
-                <p><strong>Amount:</strong> {{ amount }}</p>
+            
+                <v-snackbar v-model="data.snackbar">
+                    {{ data.pesanLogin }}
+        
+                    <template v-slot:actions>
+                        <v-btn color="yellow" variant="text" @click="data.snackbar = false"> Close </v-btn>
+                    </template>
+                </v-snackbar>
             </div> -->
         </div>
     </v-card>
