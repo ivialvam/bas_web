@@ -1,8 +1,35 @@
 <script setup>
 import { useTransactionStore } from '@/stores/tf';
+import { inject, reactive } from 'vue';
+import { VNumberInput } from 'vuetify/lib/labs/components.mjs';
 
 const transactionStore = useTransactionStore();
-const { data, transfer } = transactionStore;
+const { transfer } = transactionStore;
+
+const data = reactive({
+    Account_id: '',
+    Bank_id: '',
+    Amount: 0
+})
+
+const myAxios = inject('myAxios')
+
+const submit = () => {
+    console.log('login clicked', data);
+
+    myAxios.post('/transaction/transferbank', data).then((res) => {
+        if (res.status == 200) {
+            data.pesanLogin ="Anda berhasil submit"
+           
+        }
+        data.snackbar = true
+    // eslint-disable-next-line no-unused-vars
+    }, (err) => {
+        data.pesanLogin = "Anda gagal trx"
+        data.snackbar = true
+    })
+}
+
 </script>
 
 
@@ -14,13 +41,13 @@ const { data, transfer } = transactionStore;
             
             <div class="transaction-form">
                     <label for="account_id">Account ID:</label>
-                    <v-text-field type="varchar" v-model="data.account_id"></v-text-field>
+                    <v-text-field type="varchar" v-model="data.Account_id"></v-text-field>
             </div>
 
             <form @submit.prevent="transfer">
                 <div class="transaction-form">
                     <label for="bank_id">Bank ID:</label>
-                    <select v-model="data.bank_id" id="bank_id">
+                    <select v-model="data.Bank_id" id="bank_id">
                         <option value="021">021 - BCA</option>
                         <option value="022">022 - HSBC</option>
                         <option value="023">023 - Mandiri</option>
@@ -29,14 +56,10 @@ const { data, transfer } = transactionStore;
                     </select>
                 </div>
 
-                <div class="transaction-form">
-                    <label for="account_number">Account Number:</label>
-                    <v-text-field type="numeric" v-model="account_number"></v-text-field>
-                </div>
 
                 <div class="transaction-form">
                     <label for="amount">Amount:</label>
-                    <v-text-field type="number" v-model="data.amount"></v-text-field>
+                    <v-number-input type="number" v-model="data.Amount"></v-number-input>
                 </div>
 
                 <div>
